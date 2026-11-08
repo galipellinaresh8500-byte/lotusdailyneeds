@@ -312,25 +312,50 @@ body {
             right: -8px;
             border: 1px solid white;
             font-weight: bold;
-        }
+         <div style="text-align: center; padding: 15px; background: rgba(41, 1, 10, 0.6); border-radius: 16px; border: 1px solid rgba(255, 215, 0, 0.3); margin-bottom: 15px;">
+  <!-- Wide Open Lotus Vector Graphic -->
+  <svg width="140" height="120" viewBox="0 0 240 200" xmlns="http://www.w3.org/2000/svg" style="filter: drop-shadow(0px 6px 16px rgba(255, 215, 0, 0.4));">
+    
+    <!-- Far Left Outer Petal -->
+    <path d="M120 180 C80 150 10 130 10 90 C10 60 40 45 80 85 C95 100 110 130 120 180 Z" fill="url(#magentaDeep)" stroke="#ffd700" stroke-width="3.5" stroke-linejoin="round"/>
+    
+    <!-- Far Right Outer Petal -->
+    <path d="M120 180 C160 150 230 130 230 90 C230 60 200 45 160 85 C145 100 130 130 120 180 Z" fill="url(#magentaDeep)" stroke="#ffd700" stroke-width="3.5" stroke-linejoin="round"/>
 
-        .logo-container {
-            margin: 10px auto;
-            width: 90px;
-            height: 90px;
-            border-radius: 50%;
-            border: 2px solid var(--gold-glow);
-            padding: 5px;
-            background: rgba(255,255,255,0.1);
-            box-shadow: 0 0 15px var(--gold-glow);
-        }
+    <!-- Mid-Left Petal -->
+    <path d="M120 180 C90 130 35 110 45 70 C55 35 90 40 110 85 C115 95 118 120 120 180 Z" fill="url(#magentaBright)" stroke="#ffd700" stroke-width="3.5" stroke-linejoin="round"/>
 
-        .logo-container svg {
-            width: 100%;
-            height: 100%;
-            fill: var(--gold-glow);
-        }
+    <!-- Mid-Right Petal -->
+    <path d="M120 180 C150 130 205 110 195 70 C185 35 150 40 130 85 C125 95 122 120 120 180 Z" fill="url(#magentaBright)" stroke="#ffd700" stroke-width="3.5" stroke-linejoin="round"/>
 
+    <!-- Inner Central Upright Petal -->
+    <path d="M120 180 C110 110 90 70 120 30 C150 70 130 110 120 180 Z" fill="url(#magentaGlow)" stroke="#ffd700" stroke-width="4" stroke-linejoin="round"/>
+
+    <!-- Gold Center Base / Sparkle Accent -->
+    <ellipse cx="120" cy="150" rx="18" ry="10" fill="#ffd700" stroke="#5c061c" stroke-width="2"/>
+    <circle cx="120" cy="143" r="4" fill="#5c061c"/>
+
+    <!-- Gradients Definition -->
+    <defs>
+      <linearGradient id="magentaDeep" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#ff1493" />
+        <stop offset="100%" stop-color="#6e0030" />
+      </linearGradient>
+      <linearGradient id="magentaBright" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#ff33a1" />
+        <stop offset="100%" stop-color="#910042" />
+      </linearGradient>
+      <linearGradient id="magentaGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#ff69b4" />
+        <stop offset="100%" stop-color="#c71585" />
+      </linearGradient>
+    </defs>
+  </svg>
+
+  <!-- Title & Tagline -->
+  <h1 style="color: #ffd700; font-size: 22px; font-weight: 700; margin: 8px 0 2px 0; text-shadow: 0 2px 6px rgba(0,0,0,0.6); font-family: 'Poppins', sans-serif;">LOTUS DAILY NEEDS</h1>
+  <p style="color: #ffccff; font-size: 12px; margin: 0; letter-spacing: 1px; font-weight: 500;">HYDERABAD</p>
+</div>
         h1 {
             font-family: 'Cinzel', serif;
             color: var(--gold-glow);
