@@ -15,6 +15,96 @@
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     
     <style>
+        /* --- Festive Theme & Mobile App Styling --- */
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  /* Rich festive gradient: Deep Royal Maroon/Ruby transitioning to Dark Festive Wine */
+  background: linear-gradient(135deg, #5c061c 0%, #29010a 100%) !important;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding-bottom: 80px;
+  color: #fff;
+}
+
+/* --- Clean 2-Column Product Card Grid --- */
+.product-grid, div[style*="grid"] {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 12px !important;
+  padding: 12px !important;
+}
+
+/* --- Polished Festive Cards with Gold Glow --- */
+.product-card, .card {
+  background: rgba(255, 255, 255, 0.98) !important;
+  border-radius: 14px !important;
+  border: 1.5px solid #ffd700 !important; /* Rich Gold Border */
+  box-shadow: 0 6px 18px rgba(255, 215, 0, 0.15) !important; /* Soft festive golden glow */
+  padding: 10px !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Product Titles with Emoji Support */
+.product-card h3, .product-card span {
+  color: #3a020d !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  margin: 8px 0 !important;
+}
+
+/* --- Vibrant Festive Quantity Buttons --- */
+.product-card button, .card button {
+  background: linear-gradient(135deg, #ffd700 0%, #ffa500 100%) !important; /* Gold to Orange Gradient */
+  color: #3a020d !important;
+  border-radius: 50% !important;
+  width: 32px !important;
+  height: 32px !important;
+  font-weight: bold;
+  border: none;
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.25);
+}
+
+/* --- Sticky Festive Category Header --- */
+.category-bar, nav.categories {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 1000 !important;
+  background: rgba(41, 1, 10, 0.95) !important;
+  backdrop-filter: blur(10px);
+  padding: 10px 6px !important;
+  white-space: nowrap;
+  overflow-x: auto;
+  border-bottom: 2px solid #ffd700;
+}
+
+.category-bar::-webkit-scrollbar {
+  display: none;
+}
+
+/* --- WhatsApp Order CTA Button --- */
+.whatsapp-btn, button[class*="whatsapp"] {
+  background: linear-gradient(135deg, #25d366 0%, #128c7e 100%) !important;
+  color: white !important;
+  border-radius: 25px !important;
+  padding: 12px 18px !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  width: 100% !important;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4) !important;
+  border: none !important;
+  margin-top: 12px;
+}q
        /* --- Mobile App-Like Styling --- */
 * {
   box-sizing: border-box;
