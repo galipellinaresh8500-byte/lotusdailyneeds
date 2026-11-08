@@ -15,6 +15,104 @@
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     
     <style>
+       /* --- Mobile App-Like Styling --- */
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background: linear-gradient(135deg, #4a001f 0%, #2b0012 100%) !important;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding-bottom: 80px; /* Leaves space for the bottom app bar */
+  color: #fff;
+}
+
+/* --- Clean 2-Column Product Card Grid --- */
+/* Groups items side-by-side perfectly on mobile screens */
+.product-grid, div[style*="grid"] {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 10px !important;
+  padding: 10px !important;
+}
+
+/* --- Polished Modern Cards --- */
+.product-card, .card {
+  background: rgba(255, 255, 255, 0.98) !important;
+  border-radius: 12px !important;
+  border: 1px solid rgba(212, 175, 55, 0.4) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25) !important;
+  padding: 8px !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Product Titles */
+.product-card h3, .product-card span {
+  color: #2b0012 !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  margin: 6px 0 !important;
+}
+
+/* --- Thumb-Friendly Quantity Controls --- */
+.product-card button, .card button {
+  background: #d4af37 !important;
+  color: #2b0012 !important;
+  border-radius: 50% !important;
+  width: 30px !important;
+  height: 30px !important;
+  font-weight: bold;
+  border: none;
+  font-size: 15px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* --- Sticky Top Category Header --- */
+.category-bar, nav.categories {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 1000 !important;
+  background: rgba(43, 0, 18, 0.95) !important;
+  backdrop-filter: blur(10px);
+  padding: 8px 6px !important;
+  white-space: nowrap;
+  overflow-x: auto;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.4);
+}
+
+.category-bar::-webkit-scrollbar {
+  display: none; /* Hides scrollbar for clean look */
+}
+
+/* --- Fixed Bottom Navigation Bar --- */
+.bottom-nav, div[style*="position: fixed"] {
+  background: rgba(43, 0, 18, 0.98) !important;
+  backdrop-filter: blur(12px);
+  border-top: 1px solid rgba(212, 175, 55, 0.4) !important;
+  box-shadow: 0 -4px 20px rgba(0,0,0,0.5);
+}
+
+/* --- WhatsApp Order CTA Button --- */
+.whatsapp-btn, button[class*="whatsapp"] {
+  background: linear-gradient(135deg, #25d366 0%, #128c7e 100%) !important;
+  color: white !important;
+  border-radius: 25px !important;
+  padding: 12px 18px !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  width: 100% !important;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4) !important;
+  border: none !important;
+  margin-top: 12px;
+}
         :root {
             --primary-magenta: #800020;
             --dark-crimson: #4a0011;
